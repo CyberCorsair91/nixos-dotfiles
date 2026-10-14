@@ -2,7 +2,7 @@
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   imports =
@@ -24,6 +24,10 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+
+  nixpkgs.config.allowUnfreePredicate = pkg:
+  builtins.elem (lib.getName pkg) [ "corefonts" ];
+
 
   # Set your time zone.
   time.timeZone = "Europe/Kyiv";
