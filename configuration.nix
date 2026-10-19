@@ -14,6 +14,7 @@
       ./modules/nvidia.nix
       ./modules/bootloader.nix
       ./modules/fonts.nix
+      ./modules/virtualization.nix
     ];
 
   # Use latest kernel.
