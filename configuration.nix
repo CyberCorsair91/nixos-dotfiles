@@ -15,6 +15,7 @@
       ./modules/bootloader.nix
       ./modules/fonts.nix
       ./modules/virtualization.nix
+      ./modules/development.nix
     ];
 
   # Use latest kernel.
