@@ -15,7 +15,11 @@
     unzip
     btop
     ripgrep
-    nodejs
+    proton-vpn
+    opencode
+    anydesk
+    zoom-us
+    librewolf
   ];
 }
 
